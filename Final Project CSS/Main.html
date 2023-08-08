@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="FinalProjectCSS">
+    <meta name="keywords" content="HTML, CSS, Personal Portfolio">
+    <meta name="Author" content="Nicolas Millan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+
+    <!-- Styling -->
+    <title>Final Project CSS</title>
+    <link rel="stylesheet" href="./Styling/Styling.css">
+    <link rel="Fonts" href="./Styling/FONTS/Arizonia-Regular.ttf">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<header>
+    <p>NICOLAS MILLAN</p>
+    <div class="nav">
+        <ul>
+            <li><a href="#">abilities</a></li>
+            <li><a href="#">aboout</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    <img src="./Styling/IMG/NavBar.png" alt=".Menu" class="Menu">
+    <script>
+        const MenuLinks = document.querySelector(".Menu")
+        const NavBar = document.querySelector(".nav")
+ 
+        MenuLinks.addEventListener('click',()=>{
+            NavBar.classList.toggle('mobile-menu')
+        })
+    </script>
+</header>
+<body>
+    <div class="Side-Bar">
+        <img src="./Styling/IMG/Img22.png" alt="">
+        <div class="Side-Bar-Text">
+            <h1>Skills & Abilities</h1>
+            <nav>
+                <ul>
+                    <li>Problem Solver</li>
+                    <li>Analytical thinker</li>
+                    <li>Organize and able to prioritize</li>
+                    <li>Strong communication skills</li>
+                    <li>Team Collaborative Player</li>
+                    <li>Attentive to detail</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div  class="Abilities">
+        <h2>Professional Qualifications</h2>
+        <img src="./Styling/IMG/Earth 3d.gif" alt="">
+            <div class="Lenguages">
+                <p>Java</p>
+                <p>Pyton</p>
+                <p>C++</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>SQL</p>
+            </div>
+    </div>
+    <h3>Professional Summary</h3>
+    <div class="Summary">
+        <img src="./Styling/IMG/Arduino.jpg" alt="ArduinoProject">
+        <p>A motivated and detail-oriented computer programming student with a strong foundation in coding and problem-solving. I am dedicated to honing my skills and staying up-to-date with emerging technologies. I excel at collaborating with teams to develop efficient and innovative software solutions. With a passion for continuous learning, I am eager to contribute my technical expertise to a dynamic work environment.</p>
+    </div>
+</body>
+<footer>
+    <img src="./Styling/IMG/Gmail.png" alt="">
+    <p>Nicolasmillan0532@gmail.com</p>
+    <img src="./Styling/IMG/Phone.png" alt="">
+    <p>548577****</p>
+    <img src="./Styling/IMG/Linkedin.png" alt="">
+    <p>https://www.linkedin.com/in/nicolas-millan-5ab344217/</p>
+</footer>
+</html>

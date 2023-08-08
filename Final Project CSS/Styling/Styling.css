@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*-------------------- Header ------------------- */
+header{
+    background-color: black;
+    display: flex;
+    border-bottom: solid 2px green;
+    justify-content: space-between;
+}
+header p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 2%;
+}
+.nav{
+    width: 35%;
+}
+.nav ul{
+    display: flex;
+    margin-top: 5%;
+}
+.nav ul a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.nav a{
+    color: white;
+    font-size: 25px;
+}
+header img{
+    display: none;
+}
+
+/*--------------------- Body -----------------------*/
+body{
+    background-color: black;
+    color: white;
+}
+
+/*--------------------- Side Bar -----------------------*/
+
+.Side-Bar{
+    display: grid;
+    margin: 5% 0  5% 0;
+    padding: 5% 0  5% 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.Side-Bar, .Abilities{
+    background-image: url(./IMG/Stars.jpg);
+    background-position: bottom;
+    background-attachment: fixed;   
+}
+body .Side-Bar img{
+    width: 100%;
+    height: 90%;
+    margin: 0 5% 0 5%;
+    grid-row: 1/2;
+    grid-column: 1/1;
+}
+.Side-Bar-Text{
+    align-items: center;
+    margin: 5%;
+}
+.Side-Bar h1{
+    color: white;
+    grid-column: 2/2;
+    font-size: 40px;
+    height: 20%;
+}
+.Side-Bar-Text{
+    grid-column: 2/2;
+    height: 60%;
+}
+.Side-Bar-Text li{
+    font-size: 30px;
+    transition: all 0.3s;
+    padding: 1%;
+}
+.Side-Bar-Text li:hover{
+    color: rgb(0, 255, 0);
+    transform:translateX(-10px);
+    list-style-image: url(./IMG/barchar.png);
+}
+
+/*--------------------- Abilities -----------------------*/
+.Abilities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0 10% 0;
+    padding: 0% 0 5% 0;
+
+}
+h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15vh;
+}
+.Abilities img {
+    justify-content: center;
+    width: 50vh;
+    height: 50vh;
+    z-index: 1;
+}
+.Lenguages{
+    display: grid;
+    position: absolute;
+    z-index: 2;
+    margin-top: 23vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.Abilities p {
+    margin: 10vh;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    animation: Shrink 5s ease 5s infinite normal both;
+}
+.Abilities p:hover:nth-last-of-type(6){
+    color: black;
+    background: linear-gradient(to right, red 20%, #5382a1 30%);
+} .Abilities p:nth-last-of-type(6) {
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+.Abilities p:hover:nth-last-of-type(5){
+    color: black;
+    background: linear-gradient(to right, #306998 50%, #ffe873 50%);
+} .Abilities p:nth-last-of-type(5) {
+    grid-column: 3/3;
+    grid-row: 1/1;
+}
+.Abilities p:hover:nth-last-of-type(4){
+    color: black;
+    background-color: #00599C;
+} .Abilities p:nth-last-of-type(4) {
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+.Abilities p:hover:nth-last-of-type(3){
+    color: black;
+    background-color: #f06529;
+} .Abilities p:nth-last-of-type(3) {
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+.Abilities p:hover:nth-last-of-type(2){
+    color: black;
+    background-color: #2965f1;
+} .Abilities p:nth-last-of-type(2) {
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
+.Abilities p:hover:nth-last-of-type(1){
+    color:black;
+    background: linear-gradient(to right, #00758f 20%, #f29111 30%);
+
+} .Abilities p:nth-last-of-type(1) {
+    grid-column: 4/4;
+    grid-row: 2/2;
+    
+}
+
+
+/*--------------------- Summary -----------------------*/
+.Summary{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 10% 0;
+}
+h3{
+    margin-left: 10vh;
+    font-size: 50px;
+    margin-bottom: 3%;
+}
+.Summary p{
+    font-size: 30px;
+    text-align: justify;
+    width: 100vh;
+    margin: 5vh 20vh 0 50vh;
+}
+
+.Summary img{
+    width: 70vh;
+    height: 50vh;
+    margin-left: 10vh;
+}
+/*--------------------- Footer -----------------------*/
+footer{
+    display: flex;
+    color: white;
+    margin: 5%;
+    justify-content: center;
+}
+footer img{
+    width: 20px;
+    height: 20px;
+    margin: 0 1% 0 3%;
+}
+
+
+/*--------------------- Responsiveness -----------------------*/
+@media screen and (max-width: 1100px){
+    
+    header img{
+        display: block;
+        position: absolute;
+        width: 5vh; 
+        height: 5vh;
+        margin: 2%;
+        padding: 0;
+        right: 3vh;
+    }
+    .nav{
+        /* display: none; */
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-left: -100%;
+        padding: 0;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+    }
+    .nav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav li{ 
+        margin-top: 80px;
+    }
+    .nav.mobile-menu{
+        margin-left: 0;
+    }
+}
+
+/*--------------------- Animation -----------------------*/
+
+@keyframes Shrink {
+    0% {
+        font-size: 25px;
+    }
+    50% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 25px;
+    }
+}
